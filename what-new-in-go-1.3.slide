@@ -3,77 +3,47 @@ Bangkok Gophers
 9 Aug 2014
 
 Thanabodee Charoenpiriyakij
-CTO, Treebuild
+wingyminus@gmail.com
+@wingyplus
 
-* Compiler
+* Compiler overhaul
 
-* Compiler
-
-- เขียนด้วย Go
-- debug ง่ายกว่า
-- ง่ายต่อการเขียน unittest
-- ช่วยในเรื่องของ modularity
+- เริ่มแปลง C compiler ไปเป็น Go ด้วย translator
+- ทำให้ง่ายต่อการเขียนและดีบั๊กคอมไพเลอร์
+- go สนับสนุนในเรื่องของ modularity, automated rewriting, unit testing และ profiling
+- ง่ายต่อการทำ parallellize
 - เขียน Go สนุกกว่าเขียน C
+- เริ่มต้นเขียน translator เพื่อแปลงโค้ด C ไปเป็นโค้ด Go
+
+* Native Client Support
+
+- support on 32-bit and 64-bit x86 architecture
+- Portable Native Client not support
+- ARM Native Client not support
 
 * Operating Systems
 
-* Solaris
+- Plan 9
+- Dragonfly BSD
+- Free BSD
+- Net BSD
+- Open BSD
+- Windows 2000 ( not support!!! )
 
-- experimental
-- support on amd64 architecture
-- version >= 11
-
-* Plan 9
-
-- experimental
-- support on 386 architecture
-
-* Dragonfly BSD
-
-- experimental
-- support on 386 and amd64 architecture
-
-* Free BSD
-
-- only version 10
-- require kernel compiled with COMPAT_FREEBSD32 flag configured
-
-* Net BSD
-
-- support version >= 6.0
-
-* Open BSD
-
-- support version >= 5.5
-
-* Windows 2000
-
-- not support!
-
-* Godoc static analysis feature
-
-* Type analysis feature
+* Godoc type analysis feature
 
 - แสดงข้อมูลที่อ้างอิงไปถึง package, constant, variable, type, function หรือ statement label
 - แสดงข้อมูลของ struct (size, implement interface, methods)
 
-* Pointer analysis feature
+* Godoc pointer analysis feature
 
 - ดูข้อมูลของผู้เรียก (caller) และผู้ถูกเรียกใช้ (callee)
 - ดูข้อมูลของการเรียกใช้ function แบบกราฟ
 - ดูรายละเอียดการรับส่งของ channel
 
-* Go command
-
-* Go command
-
-- รองรับ -exec ใน go run และ go test เพื่อรันไบนารี่
-- cgo รองรับตัวแปร environment CC_FOR_TARGET และ CXX_FOR_TARGET เพื่อระบุ cross compilers ของ C และ C++
-
 * Performance
 
-* Performance
-
+- channel rewrite
 - ลดขนาดของ memory footprint ใน defer ประมาณ 2KB เมื่อ goroutine เรียกใช้ defer
 - race detector เร็วขึ้นประมาณ 40%
 - ปรับปรุงประสิทธิภาพของ regular expression ในแพคเกจ regexp
