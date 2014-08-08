@@ -5,6 +5,16 @@ Bangkok Gophers
 Thanabodee Charoenpiriyakij
 CTO, Treebuild
 
+* Compiler
+
+* Compiler
+
+- เขียนด้วย Go
+- debug ง่ายกว่า
+- ง่ายต่อการเขียน unittest
+- ช่วยในเรื่องของ modularity
+- เขียน Go สนุกกว่าเขียน C
+
 * Operating Systems
 
 * Solaris
@@ -55,8 +65,12 @@ CTO, Treebuild
 
 * Go command
 
+* Go command
+
 - รองรับ -exec ใน go run และ go test เพื่อรันไบนารี่
 - cgo รองรับตัวแปร environment CC_FOR_TARGET และ CXX_FOR_TARGET เพื่อระบุ cross compilers ของ C และ C++
+
+* Performance
 
 * Performance
 
