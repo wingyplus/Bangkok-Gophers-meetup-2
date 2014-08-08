@@ -23,7 +23,7 @@ CTO, Treebuild
 - experimental
 - support on 386 and amd64 architecture
 
-* Free BSD (version >=  8.0)
+* Free BSD
 
 - only version 10
 - require kernel compiled with COMPAT_FREEBSD32 flag configured
