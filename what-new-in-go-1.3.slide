@@ -36,3 +36,9 @@ CTO, Treebuild
 
 - support version >= 5.5
 
+* Godoc analysis feature
+
+* Type analysis feature
+
+- แสดงข้อมูลที่อ้างอิงไปถึง package, constant, variable, type, function หรือ statement label
+- แสดงข้อมูลของ struct (size, implement interface, methods)
