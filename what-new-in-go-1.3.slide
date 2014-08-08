@@ -57,3 +57,9 @@ CTO, Treebuild
 
 - รองรับ -exec ใน go run และ go test เพื่อรันไบนารี่
 - cgo รองรับตัวแปร environment CC_FOR_TARGET และ CXX_FOR_TARGET เพื่อระบุ cross compilers ของ C และ C++
+
+* Performance
+
+- ลดขนาดของ memory footprint ใน defer ประมาณ 2KB เมื่อ goroutine เรียกใช้ defer
+- race detector เร็วขึ้นประมาณ 40%
+- ปรับปรุงประสิทธิภาพของ regular expression ในแพคเกจ regexp
