@@ -1,0 +1,38 @@
+มีอะไรใหม่ใน Go 1.3
+Bangkok Gophers
+9 Aug 2014
+
+Thanabodee Charoenpiriyakij
+CTO, Treebuild
+
+* Operating Systems
+
+* Solaris
+
+- experimental
+- support on amd64 architecture
+- version >= 11
+
+* Plan 9
+
+- experimental
+- support on 386 architecture
+
+* Dragonfly BSD
+
+- experimental
+- support on 386 and amd64 architecture
+
+* Free BSD (version >=  8.0)
+
+- only version 10
+- require kernel compiled with COMPAT_FREEBSD32 flag configured
+
+* Net BSD
+
+- support version >= 6.0
+
+* Open BSD
+
+- support version >= 5.5
+
