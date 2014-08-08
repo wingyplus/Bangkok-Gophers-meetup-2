@@ -36,9 +36,24 @@ CTO, Treebuild
 
 - support version >= 5.5
 
-* Godoc analysis feature
+* Windows 2000
+
+- not support!
+
+* Godoc static analysis feature
 
 * Type analysis feature
 
 - แสดงข้อมูลที่อ้างอิงไปถึง package, constant, variable, type, function หรือ statement label
 - แสดงข้อมูลของ struct (size, implement interface, methods)
+
+* Pointer analysis feature
+
+- ดูข้อมูลของผู้เรียก (caller) และผู้ถูกเรียกใช้ (callee)
+- ดูข้อมูลของการเรียกใช้ function แบบกราฟ
+- ดูรายละเอียดการรับส่งของ channel
+
+* Go command
+
+- รองรับ -exec ใน go run และ go test เพื่อรันไบนารี่
+- cgo รองรับตัวแปร environment CC_FOR_TARGET และ CXX_FOR_TARGET เพื่อระบุ cross compilers ของ C และ C++
